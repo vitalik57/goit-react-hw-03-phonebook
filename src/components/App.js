@@ -45,6 +45,7 @@ class App extends Component {
   addContact = contact => {
     const newName = contact.name;
     const names = this.state.contacts.map(contact => contact.name.toLowerCase());
+    console.log(names);
     if (names.includes(newName.toLowerCase())) {
       alert(`${newName} is already in contact list`);
     } else {
@@ -80,4 +81,5 @@ class App extends Component {
     );
   }
 }
+
 export default App;
